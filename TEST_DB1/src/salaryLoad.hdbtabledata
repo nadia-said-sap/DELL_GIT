@@ -1,0 +1,23 @@
+{
+"format_version": 1,
+"imports": [{
+  "target_table": "SALARY",
+  "source_data": {
+    "data_type": "CSV",
+    "file_name": "salary.csv",
+    "has_header": true,
+    "dialect": "HANA",
+    "type_config": {
+      "delimiter": "\t"
+    }
+  },
+  "import_settings": {
+    "import_columns": ["id", "first_name", "last_name", "gender", "City", "JobTitle", "Salary", "Latitude", "Longitude"], 
+     "include_filter" : []
+    
+  },
+  "column_mappings": {
+    "id":1, "first_name":2, "last_name":3, "gender":4, "City":5, "JobTitle":6, "Salary":7, "Latitude":8, "Longitude":9
+  }
+}]
+}
